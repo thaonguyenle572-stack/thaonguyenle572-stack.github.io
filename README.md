@@ -23,7 +23,7 @@
         .skill-per { background: linear-gradient(90deg, var(--pink-bold), var(--pink-dark)); height: 100%; }
         footer { text-align: center; padding: 40px; background: #222; color: white; }
     </style>
-</head>
+</head> 
 <body>
     <nav>
         <a href="#about">Giới thiệu</a>
