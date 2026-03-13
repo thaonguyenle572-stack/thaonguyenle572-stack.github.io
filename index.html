@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hành Trình Cô Giáo Mầm Non | Lê Thảo Nguyên</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --pink-light: #ffe6f2;
+            --pink-medium: #ff99cc;
+            --pink-dark: #ff66b2;
+            --white: #ffffff;
+            --text: #4a4a4a;
+        }
+
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: #fffafc; color: var(--text); scroll-behavior: smooth; }
+
+        /* Navbar chuyên nghiệp */
+        nav { display: flex; justify-content: space-around; align-items: center; padding: 15px 0; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        nav a { color: var(--pink-dark); text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }
+
+        /* Banner giống mẫu của Trung Dũng */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(135deg, var(--pink-light) 0%, #fff 100%); padding: 20px; }
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; border: 8px solid var(--white); box-shadow: 0 10px 25px rgba(255,153,204,0.3); object-fit: cover; margin-bottom: 20px; }
+        .hero h1 { font-size: 2.5rem; color: var(--pink-dark); margin: 10px 0; text-transform: uppercase; }
+        .hero p { font-size: 1.1rem; color: #888; margin-bottom: 25px; }
+
+        .container { max-width: 900px; margin: auto; padding: 50px 20px; }
+        .card { background: var(--white); border-radius: 20px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.02); margin-bottom: 40px; }
+        
+        h2 { color: var(--pink-dark); font-size: 1.8rem; border-left: 5px solid var(--pink-medium); padding-left: 15px; margin-bottom: 30px; }
+
+        /* Phần năng lực giống mẫu */
+        .skill-group { margin-bottom: 20px; }
+        .skill-info { display: flex; justify-content: space-between; margin-bottom: 8px; font-weight: 600; }
+        .skill-bar { background: #f0f0f0; height: 12px; border-radius: 10px; overflow: hidden; }
+        .skill-progress { background: linear-gradient(90deg, var(--pink-medium), var(--pink-dark)); height: 100%; border-radius: 10px; width: 0; transition: width 1.5s ease-in-out; }
+
+        /* Layout giới thiệu 2 cột */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+        .about-img { width: 100%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
+
+        /* Nút liên hệ */
+        .btn-contact { background: var(--pink-dark); color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; box-shadow: 0 5px 15px rgba(255,102,178,0.4); }
+        .btn-contact:hover { background: var(--pink-medium); transform: translateY(-3px); }
+
+        footer { text-align: center; padding: 40px; background: #333; color: white; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">Về tôi</a>
+        <a href="#skills">Năng lực</a>
+        <div style="font-weight: 900; color: var(--pink-dark); font-size: 20px;">TN</div>
+        <a href="#career">Sự nghiệp</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <div class="hero">
+        <img src="https://via.placeholder.com/180" alt="Lê Thảo Nguyên" class="profile-img">
+        <p>Chào mừng bạn đến với Portfolio của tôi</p>
+        <h1>LÊ THẢO NGUYÊN</h1>
+        <p>Giáo viên Mầm non tương lai | Trái tim dành cho con trẻ</p>
+        <a href="#contact" class="btn-contact">KẾT NỐI VỚI MÌNH</a>
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h2>1. Giới thiệu bản thân</h2>
+            <div class="card about-grid">
+                <div class="about-text">
+                    <p>Mình là <b>Thảo Nguyên</b>, hiện đang là học sinh lớp 11 tại Ninh Hòa. Với mình, trẻ thơ là những trang giấy trắng tinh khôi và mình muốn là người viết lên đó những điều yêu thương nhất.</p>
+                    <p><b>Phương châm:</b> "Lấy yêu thương làm gốc, lấy kiên nhẫn làm đường đi."</p>
+                </div>
+                <img src="https://via.placeholder.com/400x300" alt="Lớp học mầm non" class="about-img">
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>2. Năng lực & Kỹ năng</h2>
+            <div class="card">
+                <div class="skill-group">
+                    <div class="skill-info"><span>Kỹ năng kể chuyện</span><span>95%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-info"><span>Múa & Âm nhạc mầm non</span><span>85%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-info"><span>Kiến thức tâm lý trẻ em</span><span>80%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-info"><span>Sáng tạo đồ dùng dạy học</span><span>90%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>3. Liên hệ bản thân</h2>
+            <div class="card" style="text-align: center;">
+                <p><i class="fas fa-envelope"></i> Email: thaonguyenle2026@gmail.com</p>
+                <p><i class="fas fa-location-dot"></i> Ninh Hòa, Khánh Hòa</p>
+                <div style="margin-top: 20px;">
+                    <a href="#" style="color: var(--pink-dark); font-size: 25px; margin: 0 15px;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" style="color: var(--pink-dark); font-size: 25px; margin: 0 15px;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 - Bản quyền thuộc về Lê Thảo Nguyên</p>
+        <p style="font-size: 10px; color: #666;">Thiết kế cho mục tiêu nghề nghiệp Giáo viên Mầm non</p>
+    </footer>
+
+</body>
+</html>
